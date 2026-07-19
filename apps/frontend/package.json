@@ -1,0 +1,14 @@
+{
+  "name": "@continuum-monorepo/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts":
+  {
+    "start": "node index.js"
+  },
+  "dependencies":
+  {
+    "@continuum-monorepo/shared": "^1.0.0"
+  }
+}
