@@ -1,6 +1,6 @@
 {
-  "name": "@continuum-monorepo/shared",
-  "version": "1.0.0",
-  "private": true,
-  "main": "index.js"
+    "name": "@continuum-monorepo/shared",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js"
 }

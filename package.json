@@ -1,22 +1,31 @@
 {
-  "name": "continuum-monorepo",
-  "version": "1.0.0",
-  "private": true,
-  "main": "index.js",
-  "scripts":
-  {
-    "start:frontend": "npm run start --workspace=@continuum-monorepo/frontend",
-    "start:backend": "npm run start --workspace=@continuum-monorepo/backend",
-    "test": "npm run test --workspaces --if-present"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "workspaces":
-  [
-    "apps/frontend",
-    "apps/backend",
-    "packages/shared"
-  ]
+    "name": "continuum-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start:frontend": "npm run start --workspace=@continuum-monorepo/frontend",
+        "start:backend": "npm run start --workspace=@continuum-monorepo/backend",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier . --write .",
+        "format:check": "prettier . --check .",
+        "test": "npm run test --workspaces --if-present"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "workspaces": [
+        "apps/frontend",
+        "apps/backend",
+        "packages/shared"
+    ],
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.7.0",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^17.7.0",
+        "prettier": "^3.9.5"
+    }
 }
